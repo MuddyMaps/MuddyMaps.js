@@ -1,0 +1,17 @@
+{
+    "fipsColumn": 1,
+    "type": "winnerTakesAll",
+    "distinguishUpper": false,
+    "categories": [
+        {
+            "title": "dvote",
+            "column": 4,
+            "hue": 240
+        },
+        {
+            "title": "gvote",
+            "column": 5,
+            "hue": 0
+        }
+    ]
+}

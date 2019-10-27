@@ -1,0 +1,45 @@
+<html>
+
+<head>
+	<script src="d3.js"></script>
+	<script src="jquery-1.8.3.min.js"></script>
+	<script src="jquery.csv-0.71.min.js"></script>
+	<script src="muddymaps.js"></script>
+	<style>
+		#map {
+			position: relative;
+			margin-left: 100px;
+			top: 50px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<span id="map"></span>
+
+	<script type="text/javascript">
+		var mapSettings;
+
+		$(document).ready(function () {
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function () {
+				if (this.readyState == 4 && this.status == 200) {
+					mapSettings = JSON.parse(this.responseText);
+
+					// http://bl.ocks.org/1014829
+					d3.xml("muddymaps_USA_Counties.svg", "image/svg+xml", function (xml) {
+						$("#map").append(xml.documentElement);
+						$.get("us_countydata.csv", processData);
+					});
+				}
+			};
+			xmlhttp.open("GET", "./settings.json", true);
+			xmlhttp.send();
+
+		});
+	</script>
+
+</body>
+
+</html>
