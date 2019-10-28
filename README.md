@@ -45,7 +45,7 @@ Upcoming features:
 
 ### 1. Add your data into the CSV
 
-Open up us_countydata.csv and add in whatever county-level data you want to compare. It can be election results, or other types of multi-dimensional geospacial county-level count data. It works with any number of categories.
+Open up us_countydata.csv and add in whatever county-level data you want to compare. It can be election results, or other types of multi-categorical geospacial county-level count data, such as [number of Cows vs People in each county](https://public.tableau.com/profile/bo.mccready8742#!/vizhome/MoreCowsThanPeople/MoreCowsThanPeople). It works with any number of categories.
 
 ### 2. Configure settings.json
 
