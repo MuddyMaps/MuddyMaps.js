@@ -89,7 +89,7 @@ To do this, you include a category object for each category in your CSV.
 #### Optional parameters:
 
 |  parameter | type  |  description |  default |
-|---|---|---|---|---|
+|---|---|---|---|
 | distinguishUpper  | bool  |  Whether or not to add a border to the counties that have totals above the upper fence | false  |
 | upperHue  | int hue number (x/360) |  The border color to apply to counties that have totals above the upper fence | 60  |
 
