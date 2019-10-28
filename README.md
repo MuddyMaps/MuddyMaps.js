@@ -115,7 +115,7 @@ How to set up a simple HTTP server on a Mac:
 Inside your terminal, visit the root directory of this project. 
 
 ```terminal
-$ cd muddyMaps
+$ cd MuddyMaps.js-master
 ```
 
 Then, run the following Python command to set up a local HTTP server. It will serve the files in this directory on port 8001.
