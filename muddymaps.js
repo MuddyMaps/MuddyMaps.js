@@ -99,6 +99,26 @@ function getHueFromCategories(key, categories) {
 	return categories[key].hue;
 }
 
+function getRunnerUp(arr){ 
+	// will return the runner up total. 
+	// if it's a tie, the runner up's total is same as winner's total.
+	biggest = -Infinity,
+	next_biggest = -Infinity;
+
+	for (var i = 0, n = arr.length; i < n; ++i) {
+		var thisNum = +arr[i]; // convert to number first
+
+		if (thisNum > biggest) {
+			next_biggest = biggest; // save previous biggest value
+			biggest = thisNum;
+		} else if (thisNum > next_biggest) {
+			next_biggest = thisNum; // new second biggest value
+		}
+	}
+
+	return next_biggest;
+}
+
 function processData(data) {
 	// Change colors of counties if we have data, skip the header row
 
@@ -131,6 +151,7 @@ function processData(data) {
 		// load data from cache
 		var thisCountyTotals = countyData[int_fips]; // an array of totals. ex [1000,1000,2000]. The keys should match mapSettings.categories array keys
 		var winningTotal = Math.max.apply(null, thisCountyTotals);
+		var runnerUpTotal = getRunnerUp(thisCountyTotals);
 		var thisCountyTotal = thisCountyTotals.reduce((a, b) => a + b, 0);
 
 		// hsl
@@ -143,8 +164,7 @@ function processData(data) {
 
 		// figure out saturation
 		saturation = Math.round(
-			// Math.abs(dvote - gvote)/tvote * 100 // old way, with just 2 categories
-			Math.abs(winningTotal - (thisCountyTotal - winningTotal)) / thisCountyTotal * 100 // new way, allowing for >2 categories
+			Math.abs(winningTotal - (runnerUpTotal)) / thisCountyTotal * 100 // new way, allowing for >2 categories
 		);
 
 		// figure out lightness
