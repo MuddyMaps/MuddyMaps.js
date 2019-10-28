@@ -99,7 +99,7 @@ To do this, you include a category object for each category in your CSV.
 }
 ```
 
-#### Optional parameters:
+#### Optional settings.json parameters:
 
 |  parameter | type  |  description |  default |
 |---|---|---|---|
