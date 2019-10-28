@@ -41,7 +41,7 @@ Upcoming features:
 
 1. Add your data into CSV
 2. Configure Settings.json
-3. Run locally
+3. Run locally &amp; View your maps 
 
 ### 1. Add your data into the CSV
 
