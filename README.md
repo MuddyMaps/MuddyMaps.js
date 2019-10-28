@@ -76,7 +76,7 @@ To do this, you include a category object for each category in your CSV.
 |---|---|---|---|
 | title  | text (string)  |  The title of the category. Can be whatever you want it to be, and doesn't need to match the column title in the CSV. | no  |
 | column  | int  |  The CSV column for the category |  yes |
-|  hue | int hue number (x/360)  |  The color to apply to counties where this county is the winner |   |
+|  hue | int hue number (x/360)  |  The color to apply to counties where this county is the winner |  yes |
 
 #### Example settings.json:
 
