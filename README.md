@@ -52,7 +52,7 @@ Open up us_countydata.csv and add in whatever county-level data you want to comp
 
 ### 2. Configure settings.json
 
-Tell settings.json which CSV columns to look at for your data. 
+Tell settings.json which CSV columns to look at for your data and which colors to use. 
 
 Take a look at the settings.json file to get a feel for how it's configured. If you need further assistance, refer to this documentation.
 
