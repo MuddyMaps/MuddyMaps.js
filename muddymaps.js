@@ -144,7 +144,7 @@ function processData(data) {
 
 	// colors
 	for (i = 1; i < adata.length; i++) {
-		var proper_fips = "" + adata[i][mapSettings.fipsColumn - 1]; // county FIPS
+		var proper_fips = adata[i][mapSettings.fipsColumn - 1].padStart(5, '0'); // county FIPS
 		var int_fips = +proper_fips; // FIPS as int (no leading zeroes)
 		var $element = $("#" + proper_fips);
 
