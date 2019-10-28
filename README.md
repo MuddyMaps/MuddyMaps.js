@@ -110,7 +110,7 @@ In order to view your map in the browser, you need to run a local web-server so 
 
 How to set up a simple HTTP server on a Mac:
 
-### Use Python's SimpleHTTPServer
+#### Setting up a local HTTP server using Python
 
 Inside your terminal, visit the root directory of this project. 
 
