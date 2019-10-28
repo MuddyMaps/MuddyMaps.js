@@ -1,4 +1,4 @@
-# Muddy Maps
+# MuddyMaps.js
 
 Create your own Muddy Maps, neutralizing maps, and winner take all maps using a CSV file and a simple configuration file.
 
