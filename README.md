@@ -127,6 +127,8 @@ $ Python -m SimpleHTTPServer 8001
 
 Now you can visit your visualization at http://localhost:8001
 
+It's an SVG, so you can zoom in.
+
 When you're finished using the HTTP server, go back to the terminal and safely terminate the HTTP server with `ctrl + c`.
 
 
