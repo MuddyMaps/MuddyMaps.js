@@ -45,7 +45,7 @@ Upcoming features:
 
 ### 1. Add your data into the CSV
 
-Open up us_countydata.csv and add in whatever county-level data you want to compare. It can be election results, or other types of multi-dimensional geospacial county-level count data. It's currently been tested with 2 categories, but the goal is for it to work with any number of categories.
+Open up us_countydata.csv and add in whatever county-level data you want to compare. It can be election results, or other types of multi-dimensional geospacial county-level count data. It works with any number of categories.
 
 ### 2. Configure settings.json
 
