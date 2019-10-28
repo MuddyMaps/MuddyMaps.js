@@ -4,7 +4,7 @@ Create your own Muddy Maps, neutralizing maps, and winner take all maps using a 
 
 ## What's a Muddy Map?
 
-"Muddy" maps use the Muddy Maps algorithm first described on the STEM Lounge article ["Muddy America : Color Balancing The Election Map"](https://stemlounge.com/muddy-america-color-balancing-trumps-election-map-infographic/) in order to color-balance margins and totals for multi-categorical geospacial data.
+"Muddy" maps are choropleth maps that use the Muddy Maps algorithm first described on the STEM Lounge article ["Muddy America : Color Balancing The Election Map"](https://stemlounge.com/muddy-america-color-balancing-trumps-election-map-infographic/) in order to color-balance margins and totals for multi-categorical geospacial data.
 
 #### Muddy Map
 
