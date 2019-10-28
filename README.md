@@ -45,11 +45,11 @@ Take a look at the settings.json file to get a feel for how it's configured. If 
 
 #### Required settings.json parameters:
 
-|  parameter | type  |  description |   |   |
-|---|---|---|---|---|
-| fipsColumn  | int  |  The CSV column for county FIPS IDs |   |   |
-| categories  | array of Category objects  |  See "Category object" |   |   |
-| type  |  text (string) |  The type of data visualization. <br/><br/>Currently supports:<ul><li> "muddy"</li> <li>"neutralizing"</li> <li> "winnerTakesAll"</li> </ul> Defaults to muddy. |   |   |
+|  parameter | type  |  description |
+|---|---|---|
+| fipsColumn  | int  |  The CSV column for county FIPS IDs |
+| categories  | array of Category objects  |  See "Category object" |
+| type  |  text (string) |  The type of data visualization. <br/><br/>Currently supports:<ul><li> "muddy"</li> <li>"neutralizing"</li> <li> "winnerTakesAll"</li> </ul> Defaults to muddy. |
 
 ##### Category object
 
@@ -59,11 +59,11 @@ To do this, you include a category object for each category in your CSV.
 
 ###### category object parameters:
 
-|  parameter | type  |  description | required  |   |
-|---|---|---|---|---|
-| title  | text (string)  |  The title of the category. Can be whatever you want it to be, and doesn't need to match the column title in the CSV. | no  |   |
-| column  | int  |  The CSV column for the category |  yes |   |
-|  hue | int hue number (x/360)  |  The color to apply to counties where this county is the winner |   |   |
+|  parameter | type  |  description | required  |
+|---|---|---|---|
+| title  | text (string)  |  The title of the category. Can be whatever you want it to be, and doesn't need to match the column title in the CSV. | no  |
+| column  | int  |  The CSV column for the category |  yes |
+|  hue | int hue number (x/360)  |  The color to apply to counties where this county is the winner |   |
 
 #### Example settings.json:
 
@@ -88,11 +88,10 @@ To do this, you include a category object for each category in your CSV.
 
 #### Optional parameters:
 
-|  parameter | type  |  description |  default |   |
+|  parameter | type  |  description |  default |
 |---|---|---|---|---|
-| distinguishUpper  | bool  |  Whether or not to add a border to the counties that have totals above the upper fence | false  |   |
-| upperHue  | int hue number (x/360) |  The border color to apply to counties that have totals above the upper fence | 60  |   |
-|   |   |   |   |   |
+| distinguishUpper  | bool  |  Whether or not to add a border to the counties that have totals above the upper fence | false  |
+| upperHue  | int hue number (x/360) |  The border color to apply to counties that have totals above the upper fence | 60  |
 
 
 ## 2. Set up a local webserver
