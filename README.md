@@ -32,8 +32,11 @@ Visualizations supported
 Maps currently supported
 - United States of America, County-level
 
-Upcoming features:
+Upcoming features (pull requests welcome):
 - Account for population-density 
+- Show Data on hover
+- "Save image" button
+- More maps (Canada, etc)
 
 
 
