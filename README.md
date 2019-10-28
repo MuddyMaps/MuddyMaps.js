@@ -137,5 +137,5 @@ This project runs entirely in the browser and does not require any server comput
 
 #### Thanks to the following contributors
 
-- Larry Weru (@LDubya)
-- Geo Miller (@georules)
+- Larry Weru ([@LDubya](https://github.com/ldubya))
+- Geo Miller ([@georules](https://github.com/georules))
