@@ -39,7 +39,17 @@ Upcoming features:
 
 ## How to use
 
-### 1. Configure settings.json
+1. Add your data into CSV
+2. Configure Settings.json
+3. Run locally
+
+### 1. Add your data into the CSV
+
+Open up us_countydata.csv and add in whatever county-level data you want to compare. It can be election results, or other types of multi-dimensional geospacial county-level count data. It's currently been tested with 2 categories, but the goal is for it to work with any number of categories.
+
+### 2. Configure settings.json
+
+Tell settings.json which CSV columns to look at for your data. 
 
 Take a look at the settings.json file to get a feel for how it's configured. If you need further assistance, refer to this documentation.
 
@@ -94,11 +104,11 @@ To do this, you include a category object for each category in your CSV.
 | upperHue  | int hue number (x/360) |  The border color to apply to counties that have totals above the upper fence | 60  |
 
 
-## 2. Set up a local webserver
+### 3. Set up a local webserver
 
-This project runs entirely in the browser and does not require any server computation. However, due to modern web browsers' adherence to the same origin policy, you need to serve the files from a webserver that allows same origin policy. This will allow Muddy Maps to access your CSV to read the data and do its analysis.
+In order to view your map in the browser, you need to run a local web-server so that the browser can load your CSV data. This is due to the [same origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) enforced in modern web browsers for your security.
 
-How to set up a simple HTTP server on a mac:
+How to set up a simple HTTP server on a Mac:
 
 ### Use Python's SimpleHTTPServer
 
@@ -116,6 +126,9 @@ $ Python -m SimpleHTTPServer 8001
 ```
 
 When you're finished using the HTTP server, go back to the terminal and safely terminate the HTTP server with `ctrl + c`.
+
+
+This project runs entirely in the browser and does not require any server computation. However, due to modern web browsers' adherence to the same origin policy, you need to serve the files from a webserver that allows same origin policy. This will allow Muddy Maps to access your CSV to read the data and do its analysis.
 
 
 #### Thanks to the following contributors
