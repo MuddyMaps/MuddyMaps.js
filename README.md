@@ -125,6 +125,8 @@ Then, run the following Python command to set up a local HTTP server. It will se
 $ Python -m SimpleHTTPServer 8001
 ```
 
+Now you can visit your visualization at http://localhost:8001
+
 When you're finished using the HTTP server, go back to the terminal and safely terminate the HTTP server with `ctrl + c`.
 
 
