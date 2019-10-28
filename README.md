@@ -101,7 +101,7 @@ To do this, you include a category object for each category in your CSV.
 |  parameter | type  |  description |  default |
 |---|---|---|---|
 | distinguishUpper  | bool  |  Whether or not to add a border to the counties that have totals above the upper fence | false  |
-| upperHue  | int hue number (x/360) |  The border color to apply to counties that have totals above the upper fence | 60  |
+| upperHue  | int hue number (x/360) |  The border color to apply to counties that have totals above the upper fence, if distinguishUpper is set to `true` | 60  |
 
 
 ### 3. Set up a local webserver
